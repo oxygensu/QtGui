@@ -48,6 +48,7 @@ class MyWindow(QMainWindow):
 
     def init_navigaton_interface(self):
         self.right_widget1 = QWidget()  # 创建右侧界面1
+        self.right_widget1.setStyleSheet("QWidget { background-color: Red}")
         self.right_layout1 = QGridLayout()  # 创建网格布局对象1
         self.right_widget1.setLayout(self.right_layout1)  # 设置右侧界面1的布局为网格布局
         self.label1 = QLabel()
@@ -55,6 +56,7 @@ class MyWindow(QMainWindow):
         self.right_layout1.addWidget(self.label1)
 
         self.right_widget2 = QWidget()  # 创建右侧界面2
+        self.right_widget2.setStyleSheet("QWidget { background-color: Blue}")
         self.right_layout2 = QGridLayout()  # 创建网格布局对象2
         self.right_widget2.setLayout(self.right_layout2)  # 设置右侧界面2的布局为网格布局
         self.label2 = QLabel()
