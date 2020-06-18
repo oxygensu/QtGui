@@ -16,7 +16,7 @@ class MyWindow(QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle("Tool test version")
+        self.setWindowTitle("Post-It")
         self.resize(800, 600)
         self.main_widget = QWidget()  # 创建窗口主部件
         self.main_widget.setObjectName("main_widget")  # 对象命名
