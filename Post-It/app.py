@@ -26,7 +26,7 @@ class MyWindow(QMainWindow):
         # 初始化导航栏和导航栏界面
         self.init_navigation_bar()
         self.init_navigation_interface()
-        self.clicked_1()  # 默认显示界面1
+        self.display1()  # 默认显示界面1
 
         # 将初始化完成的左侧、右侧空间加入整体空间的网格布局
         self.main_layout.addWidget(self.left_widget, 0, 0, 1, 1)
@@ -64,14 +64,14 @@ class MyWindow(QMainWindow):
         self.right_layout2.addWidget(self.label2)
 
         # 把切换界面的button和两个跳转函数绑定
-        self.button1.clicked.connect(self.clicked_1)
-        self.button2.clicked.connect(self.clicked_2)
+        self.button1.clicked.connect(self.display1)
+        self.button2.clicked.connect(self.display2)
 
-    def clicked_1(self):
+    def display1(self):
         self.right_widget1.show()
         self.right_widget2.hide()
 
-    def clicked_2(self):
+    def display2(self):
         self.right_widget1.hide()
         self.right_widget2.show()
 
